@@ -5,12 +5,12 @@ import TextForm from './Components/TextForm';
 import About from './Components/About';
 import Alert from './Components/Alert';
 import React, { useState } from 'react';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   const [alert, setAlert] = useState(null)
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <>
-      {/* <Router>
+      <Router>
         <Navbar title="TextUtils" homeText="Home" aboutText="About" mode={mode} listenEvent={listenEvent} />
         <Alert alert={alert} />
         <div className="container my-3">
@@ -57,12 +57,12 @@ function App() {
             <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
           </Routes>
         </div>
-      </Router> */}
-      <Navbar title="TextUtils" homeText="Home" aboutText="About" mode={mode} listenEvent={listenEvent} />
+      </Router>
+      {/* <Navbar title="TextUtils" homeText="Home" aboutText="About" mode={mode} listenEvent={listenEvent} />
       <Alert alert={alert} />
       <div className="container my-3">
         <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />
-      </div>
+      </div> */}
     </>
   );
 }
